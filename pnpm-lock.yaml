@@ -11,6 +11,9 @@ dependencies:
   '@nuxt/ui':
     specifier: ^2.14.2
     version: 2.14.2(nuxt@3.10.3)(vite@5.1.6)(vue@3.4.21)
+  dotenv:
+    specifier: ^16.4.5
+    version: 16.4.5
   drizzle-orm:
     specifier: ^0.30.2
     version: 0.30.2(@neondatabase/serverless@0.9.0)(postgres@3.4.3)
@@ -43,6 +46,9 @@ devDependencies:
   drizzle-kit:
     specifier: ^0.20.14
     version: 0.20.14
+  tsx:
+    specifier: ^4.7.2
+    version: 4.7.2
 
 packages:
 
@@ -4105,7 +4111,6 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
-    dev: false
     optional: true
 
   /function-bind@1.1.2:
@@ -7287,6 +7292,17 @@ packages:
     resolution: {integrity: sha512-LxhtAkPDTkVCMQjt2h6eBVY28KCjikZqZfMcC15YBeNjkgUpdCfBu5HoiOTDu86v6smE8yOjyEktJ8hlbANHQA==}
     engines: {node: '>=0.6.x'}
     dev: false
+
+  /tsx@4.7.2:
+    resolution: {integrity: sha512-BCNd4kz6fz12fyrgCTEdZHGJ9fWTGeUzXmQysh0RVocDY3h4frk05ZNCXSy4kIenF7y/QnrdiVpTsyNRn6vlAw==}
+    engines: {node: '>=18.0.0'}
+    hasBin: true
+    dependencies:
+      esbuild: 0.19.12
+      get-tsconfig: 4.7.3
+    optionalDependencies:
+      fsevents: 2.3.3
+    dev: true
 
   /tuf-js@2.2.0:
     resolution: {integrity: sha512-ZSDngmP1z6zw+FIkIBjvOp/II/mIub/O7Pp12j1WNsiCpg5R5wAc//i555bBQsE44O94btLt0xM/Zr2LQjwdCg==}
