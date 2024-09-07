@@ -1,7 +1,7 @@
 {
   "name": "nuxt-app",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -34,7 +34,8 @@
   },
   "lint-staged": {
     "*.{js,ts,vue}": [
-      "eslint . --cache --fix"
+      "eslint . --cache --fix",
+      "git add"
     ]
   }
 }
