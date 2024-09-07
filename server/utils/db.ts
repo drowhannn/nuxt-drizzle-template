@@ -3,7 +3,7 @@ import { drizzle } from 'drizzle-orm/neon-http'
 import { env } from 'std-env'
 import * as schema from '../db/schema'
 
-const sql = neon(env.DRIZZLE_DATABASE_URL!)
+const sql = neon(env.DATABASE_URL!)
 
 let _db: ReturnType<typeof drizzle<typeof schema>>
 export function useDb() {
